@@ -764,6 +764,9 @@
         draw( results );
       });
     }
+    else if(options.geographyConfig.dataJson) {
+      draw( options.geographyConfig.dataJson);
+    }
     else {
       draw( this[options.scope + 'Topo'] || options.geographyConfig.dataJson);
     }
